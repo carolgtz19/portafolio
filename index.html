@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">CG</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#certificaciones" onclick="seleccionar()">CERTIFICACIONES</a></li>
+                    <li><a href="#tesis" onclick="seleccionar()">TESIS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="avatar.jpg" alt="avatar">
+            </div>
+            <h1>Carolina Gutierrez</h1>
+            <h2>Ingenieria en Sistemas Computacionales</h2>
+            <div class="redes">
+                <a href="https://github.com/carolgtz19" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://instagram.com/carol_gtz04/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:caro.gda0419@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+
+            </div>
+        </div>
+     
+    </section>
+
+    <section id="sobremi" class="sobremi reveal" style="padding: 50px 0;">
+        <div style="text-align: center; margin-bottom: 30px;">
+            <h2 style="margin: 0; font-size: 36px;">SOBRE MÍ</h2>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 40px; width: 100%; max-width: 1200px; margin: 0 auto;">
+            <div class="imagen" style="flex: 1; display: flex; justify-content: center;">
+                <img src="imagen.png" alt="Imagen de perfil" style="width: 70%; max-width: 350px; height: auto; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+            </div>
+            <div class="contenido-seccion" style="flex: 1; max-width: 600px;">
+                <p style="text-align: justify; line-height: 1.8; font-size: 22px;">
+                    <span style="font-weight: bold; color: #009688;">Soy, estudiante de Ingeniería en Sistemas Computacionales</span> 
+                    con pasión por el desarrollo de software y la resolución de problemas. Me especializo en programación, bases de datos 
+                    y optimización de sistemas. Busco crecer profesionalmente, aportar a proyectos innovadores y aplicar mis conocimientos 
+                    para generar mejoras tecnológicas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="curriculum" class="sobremi reveal">
+        <div class="contenido-seccion">
+            <h2>CURRICULUM</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item">
+                        <h4 style="text-align: justify;">Tecnico en Ofimatica</h4>
+                        <span class="lugar"style="text-align: justify;">CETIS 1 "Coronel Matilde Galicia Rioja"</span>
+                        <span class="fecha"style="text-align: justify;">2019 - 2022</span>
+                        <p style="text-align: justify;">Aprendi a utilizar software de oficina, gestión de bases de datos y mantenimiento básico de computadoras.</p>
+                    </div>
+                    <div class="item">
+                        <h4 style="text-align: justify;">Ingeniería en Sistemas Computacionales</h4>
+                        <span class="lugar" style="text-align: justify;">Universidad Tres Culturas - UTC</span>
+                        <span class="fecha"style="text-align: justify;">2022- Actualidad</span>
+                        <p style="text-align: justify;"> He aprendido sobre programación, bases de datos, redes de computadoras, sistemas operativos, inteligencia artificial, arquitectura de computadoras. </p>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="item">
+                        <h4 style="text-align: justify;">Practicas Profesionales</h4>
+                        <span class="lugar"style="text-align: justify;">CETIS 1 – Departamento de Control Escolar</span>
+                        <span class="fecha"style="text-align: justify;">2022</span>
+                        <p style="text-align: justify;">Capturé datos de alumnos, elaboré reportes en Excel y transcribí y corregí documentos administrativos.</p>
+                    </div>
+                    <div class="item">
+                        <h4 style="text-align: justify;">Asistente de Control de Inventario</h4>
+                        <span class="lugar"style="text-align: justify;">CETIS 1 – Departamento de Recursos Materiales</span>
+                        <span class="fecha"style="text-align: justify;">2022</span>
+                        <p style="text-align: justify;">Actualicé la base de datos de inventario, generé reportes en Excel con filtros y gráficos, y registré incidencias del estado físico de los equipos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="https://drive.google.com/file/d/1WUWzxNoYlApSMnSEz7GIE5SJVVmEW-7R/view?usp=sharing" download style="text-decoration: none;">
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </a>
+        
+
+    </section>
+
+    <section id="portafolio" class="sobremi reveal">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="item-galeria">
+                    <img src="1.png" alt="Concurso Hackaton">
+                    <div class="descripcion">
+                        <h3>Hackaton</h3>
+                        <p>Competencia importante en la carrera de Ingeniería en Sistemas.</p>
+                    </div>
+                </div>
+                <div class="item-galeria">
+                    <img src="2.png" alt="Reconocimiento Jacatón">
+                    <div class="descripcion">
+                        <h3>Reconocimiento "Hackaton"</h3>
+                        <p>Reconocimiento por participación en el "concurso Hackaton".</p>
+                    </div>
+                </div>
+                <div class="item-galeria">
+                    <img src="3.png" alt="Proyecto de prototipo con servomotores">
+                    <div class="descripcion">
+                        <h3>Araña robótica</h3>
+                        <p>Desarrollo de un prototipo de araña robótica con servomotores.</p>
+                    </div>
+                </div>
+                <div class="item-galeria">
+                    <img src="4 (2).png" alt="Reconocimiento Jacatón">
+                    <div class="descripcion">
+                        <h3>Tesis</h3>
+                        <p>Desarrollo e implementación de un sistema web para la gestión de solicitudes de cotización.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificaciones" class="sobremi reveal">
+        <div class="contenido-seccion">
+            <h2>CERTIFICACIONES</h2>
+            <div class="galeria">
+                <div class="item-galeria">
+                    <img src="certificacion1.jpg" alt="Certificacion1">
+                    <div class="descripcion">
+                        <h3>PottencIA</h3>
+                        <p>Conceptos fundamentales y el impacto de la IA en el ámbito académico y profesional.</p>
+                    </div>
+                </div>
+
+                <div class="item-galeria">
+                    <img src="certificacion3.png" alt="Certificaion3">
+                    <div class="descripcion">
+                        <h3>Impacto global</h3>
+                        <p>Impacto de la IA en la sociedad y su comparación con la inteligencia humana.</p>
+                    </div>
+                </div>
+                <div class="item-galeria">
+                    <img src="certificacion4.png" alt="Certificacion4">
+                    <div class="descripcion">
+                        <h3>Uso responsable de datos</h3>
+                        <p>Principios éticos y desafíos del uso de IA y machine learning en el manejo de datos.</p>
+                    </div>
+                </div>
+
+                <div class="item-galeria">
+                    <img src="certicicacion2.jpg" alt="Certificacion2">
+                    <div class="descripcion">
+                        <h3>Conceptos basicos de  redes</h3>
+                        <p>Conceptos básicos y habilidades para configurar y administrar la red en una oficina pequeña.</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="tesis" class="sobremi reveal">
+                <div class="contenido-seccion">
+                    <h2>TESIS</h2>
+                    <div class="galeria">
+                        <div class="item-galeria">
+                            <img src="certificacion1.jpg" alt="Concurso Jacatón">
+                            <div class="descripcion">
+                                <h3>PottencIA</h3>
+                                <p>Conceptos fundamentales y el impacto de la IA en el ámbito académico y profesional.</p>
+                            </div>
+                        </div>
+        
+                        <div class="item-galeria">
+                            <img src="certicicacion2.jpg" alt="Reconocimiento Jacatón">
+                            <div class="descripcion">
+                                <h3>Conceptos basicos de  redes</h3>
+                                <p>Conceptos básicos y habilidades para configurar y administrar la red en una oficina pequeña.</p>
+                            </div>
+                        </div>
+                    </section>
+
+
+    
+
+            <section id="contacto" class="contacto reveal" style="display: flex; justify-content: center; align-items: center; min-height: 100vh;">
+                <div class="contenido-seccion" style="text-align: center;">
+                    <h2>CONTACTO</h2>
+                    <div class="fila" style="display: flex; justify-content: center;">
+                        <!-- Formulario -->
+                        <div class="col" style="max-width: 600px; width: 100%;">
+                            <input type="text" placeholder="Tú Nombre" style="width: 100%; margin-bottom: 10px; padding: 10px;">
+                            <input type="text" placeholder="Número telefónico" style="width: 100%; margin-bottom: 10px; padding: 10px;">
+                            <input type="text" placeholder="Dirección de correo" style="width: 100%; margin-bottom: 10px; padding: 10px;">
+                            <input type="text" placeholder="Tema" style="width: 100%; margin-bottom: 10px; padding: 10px;">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" style="width: 100%; margin-bottom: 10px; padding: 10px;"></textarea>
+                            <button style="padding: 10px 20px; cursor: pointer;">
+                                Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                                <span class="overlay"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/carolgtz19" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://instagram.com/carol_gtz04/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:caro.gda0419@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <p>©2025 Derechos Reservados Carolina Gutierrez.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
